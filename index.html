@@ -40,14 +40,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 60px;
-    background: rgba(15, 26, 58, 0.92);
+    background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(184,144,42,0.2);
-  }
-
-  /* ナビ固定によるアンカーズレを補正 */
-  section[id] {
-    scroll-margin-top: 80px;
+    border-bottom: 1px solid rgba(15,26,58,0.15);
   }
 
   .nav-logo {
@@ -57,7 +52,6 @@
   }
 
   .nav-logo img {
-    height: 40px;
     width: auto;
   }
 
@@ -69,7 +63,7 @@
   }
 
   .nav-links a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(15,26,58,0.85);
     text-decoration: none;
     font-size: 13px;
     font-weight: 700;
@@ -77,7 +71,7 @@
     transition: color 0.2s;
   }
 
-  .nav-links a:hover { color: var(--gold-light); }
+  .nav-links a:hover { color: var(--gold); }
 
   .nav-cta {
     background: var(--gold);
@@ -3138,8 +3132,8 @@ section + section, section + div { margin-top: 0; }
 <!-- NAVBAR -->
 <nav>
   <div class="nav-logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Gatto_europeo4.jpg" alt="SpoBizField" style="display:none;">
-    <span style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:0.08em; color:#fff;">SPO<span style="color:#B8902A;">BIZ</span>FIELD</span>
+    <img src="spobizfield-02.png" alt="SBF Icon" style="height:44px;width:auto;">
+    <img src="spobizfield-03.png" alt="SPO BIZ FIELD" style="height:36px;width:auto;">
   </div>
   <ul class="nav-links">
     <li><a href="#problem">課題</a></li>
@@ -3484,7 +3478,8 @@ section + section, section + div { margin-top: 0; }
       <div class="card-divider"></div>
       <p class="card-body">
         スポンサー営業・AI活用・パーソナルブランド構築など<br>
-        <strong>成果直結テーマのみ</strong>で開催。
+        <strong>成果直結テーマのみ</strong>で開催。<br>
+        <span style="font-size:12px;opacity:0.75;">オンライン開催に加え、オフラインでは六本木・PLEAD LABを拠点とする予定。</span>
       </p>
     </div>
 
@@ -3549,6 +3544,10 @@ section + section, section + div { margin-top: 0; }
     <p class="solution-cta-copy">
       5つ全部使い倒せる環境が、<br>
       <em>月1万円から</em>始まります。
+    </p>
+    <p style="font-size:13px;color:rgba(255,255,255,0.7);margin-top:16px;line-height:1.8;">
+      この圧倒的なサービスが実現するのは、草野とPLEADYによるコラボレーションが<br>
+      <strong style="color:#fff;">スポーツに関わる人、すべてを豊かにできる</strong>という想いから。
     </p>
     <a href="#plan" class="btn-gold">プランを確認する →</a>
   </div>
@@ -3705,7 +3704,7 @@ section + section, section + div { margin-top: 0; }
         <div class="plan-feature"><div class="feature-check"></div><span>AIプロンプト提供</span></div>
       </div>
       <div class="plan-cta">
-        <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" target="_blank" class="btn-plan btn-plan-outline">このプランで始める</a>
+        <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" class="btn-plan btn-plan-outline">このプランで始める</a>
       </div>
     </div>
 
@@ -3729,7 +3728,7 @@ section + section, section + div { margin-top: 0; }
         <div class="plan-feature"><div class="feature-check"></div><span>視座爆上げ体験への参加権</span></div>
       </div>
       <div class="plan-cta">
-        <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" target="_blank" class="btn-plan btn-plan-fill">このプランで始める</a>
+        <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" class="btn-plan btn-plan-fill">このプランで始める</a>
       </div>
     </div>
 
@@ -3752,7 +3751,7 @@ section + section, section + div { margin-top: 0; }
         <div class="plan-feature"><div class="feature-check"></div><span>草野リソースを活用した伴走型経営</span></div>
       </div>
       <div class="plan-cta">
-        <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" target="_blank" class="btn-plan btn-plan-outline">詳細を問い合わせる</a>
+        <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" class="btn-plan btn-plan-outline">詳細を問い合わせる</a>
       </div>
     </div>
 
@@ -3779,7 +3778,7 @@ section + section, section + div { margin-top: 0; }
       </p>
     </div>
     <div class="cta-btn-group">
-      <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" target="_blank" class="btn-cta-gold">今すぐ申し込む →</a>
+      <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" class="btn-cta-gold">今すぐ申し込む →</a>
       <p class="btn-cta-text">まずは内容を確認する ↓</p>
     </div>
   </div>
@@ -3915,7 +3914,7 @@ section + section, section + div { margin-top: 0; }
       </p>
       <p class="bridge-sub">進み続けるしかない。最初の一歩がすべての始まりです。</p>
     </div>
-    <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" target="_blank" class="btn-gold">今すぐ申し込む →</a>
+    <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" class="btn-gold">今すぐ申し込む →</a>
   </div>
 
 </section>
@@ -3976,7 +3975,7 @@ section + section, section + div { margin-top: 0; }
 
     <!-- ボタン -->
     <div class="cta-buttons anim d4">
-      <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" target="_blank" class="btn-main">
+      <a href="https://line.me/R/ti/p/@858kbbdb?oat_content=url&ts=04301234" class="btn-main">
         <span>今すぐ申し込む</span>
         <span class="arrow">→</span>
       </a>
@@ -4008,10 +4007,15 @@ section + section, section + div { margin-top: 0; }
   </div>
 
   <!-- FOOTER -->
-  <div class="cta-footer">
-    <p class="footer-logo">SPO<span>BIZ</span>FIELD</p>
+  <div class="cta-footer" style="text-align:center;">
     <p class="footer-copy">© 2026 SpoBizField. All rights reserved.</p>
-    <p class="footer-powered">Powered by RISE EIGHT Inc.</p>
+    <div style="margin-top:32px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.12);">
+      <p style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:rgba(255,255,255,0.4);text-transform:uppercase;margin-bottom:16px;">Provided by</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;">
+        <img src="riseeight_logo.png" alt="Rise Eight" style="height:32px;width:auto;filter:brightness(0) invert(1);opacity:0.85;">
+        <img src="pleady_logo.png" alt="PLEADY" style="height:32px;width:auto;filter:brightness(0) invert(1);opacity:0.85;">
+      </div>
+    </div>
   </div>
 
 </section>
