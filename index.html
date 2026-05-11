@@ -2132,6 +2132,7 @@
     text-align: left;
     justify-content: flex-start;
     padding: 64px 60px 48px;
+  }
 
   /* ─── TOP BADGE ─── */
   .cta-badge {
@@ -2352,39 +2353,7 @@
   }
 
   /* ─── FOOTER ─── */
-  .cta-footer {
-    position: relative;
-    z-index: 10;
-    padding: 32px 60px;
-    border-top: 1px solid rgba(184,144,42,0.3);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-  }
 
-  .footer-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.08em;
-    color: var(--navy);
-  }
-
-  .footer-logo span { color: var(--gold); }
-
-  .footer-copy {
-    font-size: 11px;
-    color: rgba(27,43,94,0.5);
-    font-weight: 700;
-    letter-spacing: 0.06em;
-  }
-
-  .footer-powered {
-    font-size: 11px;
-    color: rgba(27,43,94,0.5);
-    font-weight: 700;
-    letter-spacing: 0.06em;
-  }
 
   /* CTAセクションのスラッシュ・BG文字はベージュ背景では非表示 */
   .cta-section .slash,
@@ -2402,7 +2371,10 @@
     .cta-inner { padding: 56px 24px 40px; }
     .plan-summary { flex-direction: column; max-width: 100%; }
     .cta-buttons { flex-direction: column; align-items: flex-start; }
-    .cta-footer { flex-direction: column; align-items: flex-start; padding: 28px 24px; gap: 12px; }
+    .cta-footer { padding: 28px 24px; }
+    .footer-top-row { flex-direction: column; align-items: flex-start; }
+    .footer-meta { align-items: flex-start; }
+    .footer-legal-sep { margin: 0 8px; }
     .slash, .slash-2 { display: none; }
   }
 
@@ -3219,10 +3191,25 @@ section + section, section + div { margin-top: 0; }
   </div>
 
   <!-- FOOTER -->
-  <footer class="cta-footer">
-    <div class="footer-logo">SPO<span>BIZ</span>FIELD</div>
-    <p class="footer-copy">© 2026 RISEEIGHT Inc. All rights reserved.</p>
-    <p class="footer-powered">Powered by PLEADY</p>
+  <footer style="position:relative;z-index:10;padding:32px 60px;border-top:1px solid rgba(184,144,42,0.3);background:transparent;display:flex;flex-direction:column;gap:0;">
+    <!-- ロゴ＋コピーライト行 -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.08em;color:#1B2B5E;">SPO<span style="color:#B8902A;">BIZ</span>FIELD</div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;">
+        <p style="font-size:11px;color:rgba(27,43,94,0.5);font-weight:700;letter-spacing:0.06em;margin:0;">© 2026 RISEEIGHT Inc. All rights reserved.</p>
+        <p style="font-size:11px;color:rgba(27,43,94,0.5);font-weight:700;letter-spacing:0.06em;margin:0;">Powered by PLEADY</p>
+      </div>
+    </div>
+    <!-- 法的リンク行 -->
+    <div style="border-top:1px solid rgba(184,144,42,0.2);padding-top:14px;display:flex;align-items:center;flex-wrap:wrap;gap:6px 0;">
+      <a href="https://riseeight.notion.site/35add5b2da1f8182bc78e866ea8dcfcc" target="_blank" rel="noopener noreferrer" style="font-size:11px;font-weight:700;color:#1B2B5E !important;text-decoration:none;letter-spacing:0.05em;opacity:0.7;">利用規約</a>
+      <span style="font-size:11px;color:rgba(27,43,94,0.25);margin:0 10px;">|</span>
+      <a href="https://riseeight.notion.site/35add5b2da1f81c8a340e2980f7c7170" target="_blank" rel="noopener noreferrer" style="font-size:11px;font-weight:700;color:#1B2B5E !important;text-decoration:none;letter-spacing:0.05em;opacity:0.7;">特定商取引法に基づく表記</a>
+      <span style="font-size:11px;color:rgba(27,43,94,0.25);margin:0 10px;">|</span>
+      <a href="https://riseeight.notion.site/35add5b2da1f81b1bed8ec7764b95009" target="_blank" rel="noopener noreferrer" style="font-size:11px;font-weight:700;color:#1B2B5E !important;text-decoration:none;letter-spacing:0.05em;opacity:0.7;">解約規定</a>
+      <span style="font-size:11px;color:rgba(27,43,94,0.25);margin:0 10px;">|</span>
+      <a href="https://riseeight.notion.site/35add5b2da1f812c8067e2d48fb3fedb" target="_blank" rel="noopener noreferrer" style="font-size:11px;font-weight:700;color:#1B2B5E !important;text-decoration:none;letter-spacing:0.05em;opacity:0.7;">免責事項</a>
+    </div>
   </footer>
 
 </section>
@@ -3391,10 +3378,16 @@ section + section, section + div { margin-top: 0; }
     padding: 32px 60px;
     border-top: 1px solid rgba(184,144,42,0.3);
     display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: transparent;
+  }
+  .footer-top-row {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
-    background: transparent;
+    flex-wrap: wrap;
+    gap: 12px;
   }
   .cta-footer .footer-logo {
     font-family: 'Bebas Neue', sans-serif;
@@ -3403,6 +3396,12 @@ section + section, section + div { margin-top: 0; }
     color: var(--navy);
   }
   .cta-footer .footer-logo span { color: var(--gold); }
+  .footer-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
   .cta-footer .footer-copy,
   .cta-footer .footer-powered {
     font-size: 11px;
@@ -3410,8 +3409,37 @@ section + section, section + div { margin-top: 0; }
     font-weight: 700;
     letter-spacing: 0.06em;
   }
+  /* ─── FOOTER LEGAL LINKS ─── */
+  .footer-legal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 0;
+    border-top: 1px solid rgba(184,144,42,0.15);
+    padding-top: 14px;
+  }
+  .footer-legal a {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(27,43,94,0.55);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+  .footer-legal a:hover {
+    color: var(--gold);
+  }
+  .footer-legal-sep {
+    font-size: 11px;
+    color: rgba(27,43,94,0.2);
+    margin: 0 10px;
+  }
   @media (max-width: 768px) {
-    .cta-footer { flex-direction: column; align-items: flex-start; padding: 28px 24px; gap: 12px; }
+    .cta-footer { padding: 28px 24px; gap: 14px; }
+    .footer-top-row { flex-direction: column; align-items: flex-start; }
+    .footer-meta { align-items: flex-start; }
+    .footer-legal-sep { margin: 0 8px; }
   }
 </style>
 
